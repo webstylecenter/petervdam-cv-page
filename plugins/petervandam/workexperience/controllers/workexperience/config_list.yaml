@@ -1,12 +1,12 @@
-title: WorkExperience
-modelClass: PeterVanDam\Workexperience\Models\Experience
 list: $/petervandam/workexperience/models/experience/columns.yaml
-recordUrl: 'petervandam/workexperience/workexperience/update/:id'
+modelClass: petervandam\workexperience\Models\Experience
+title: Workexperience
 noRecordsMessage: 'backend::lang.list.no_records'
-recordsPerPage: 20
 showSetup: true
 showCheckboxes: true
+recordsPerPage: 20
 toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'petervandam/workexperience/workexperience/update/:id'

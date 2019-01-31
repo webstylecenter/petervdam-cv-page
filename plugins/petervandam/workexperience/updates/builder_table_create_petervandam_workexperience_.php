@@ -1,4 +1,4 @@
-<?php namespace PeterVanDam\Workexperience\Updates;
+<?php namespace petervandam\workexperience\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
@@ -13,9 +13,9 @@ class BuilderTableCreatePetervandamWorkexperience extends Migration
             $table->increments('id');
             $table->string('company', 255);
             $table->string('startyear', 12);
-            $table->string('endyear');
+            $table->string('endyear', 12);
             $table->string('location', 255);
-            $table->string('url', 255);
+            $table->string('url', 255)->nullable();
             $table->string('subtitle', 255);
             $table->text('experience');
         });

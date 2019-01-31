@@ -5,6 +5,6 @@ columns:
         searchable: true
         sortable: true
     startyear:
-        label: StartYear
+        label: 'Start year'
         type: text
         sortable: true

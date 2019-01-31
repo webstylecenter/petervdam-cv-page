@@ -1,6 +1,6 @@
-name: WorkExperience
+name: Workexperience
 form: $/petervandam/workexperience/models/experience/fields.yaml
-modelClass: PeterVanDam\Workexperience\Models\Experience
+modelClass: petervandam\workexperience\Models\Experience
 defaultRedirect: petervandam/workexperience/workexperience
 create:
     redirect: 'petervandam/workexperience/workexperience/update/:id'

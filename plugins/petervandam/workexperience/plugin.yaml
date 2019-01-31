@@ -6,6 +6,6 @@ plugin:
     homepage: ''
 navigation:
     main-menu-item:
-        label: 'petervandam.workexperience::lang.plugin.name'
+        label: 'Work Experience'
         url: petervandam/workexperience/workexperience
         icon: icon-list-ul

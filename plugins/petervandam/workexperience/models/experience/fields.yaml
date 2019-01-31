@@ -5,32 +5,32 @@ fields:
         required: 1
         type: text
     subtitle:
-        label: 'Job name'
-        span: right
+        label: Jobname
+        span: auto
+        required: 1
         type: text
     location:
         label: Location
-        span: left
+        span: auto
         required: 1
         type: text
     url:
         label: 'Link to website'
-        span: right
-        placeholder: 'https://'
-        required: 1
+        span: auto
         type: text
     startyear:
         label: 'Year started'
-        span: left
+        span: auto
         required: 1
         type: text
     endyear:
         label: 'Year ended'
-        span: right
+        span: auto
         required: 1
         type: text
     experience:
-        label: 'Experience / Tasks'
+        label: 'Rich editor'
         span: full
-        size: huge
+        size: ''
+        required: 1
         type: richeditor

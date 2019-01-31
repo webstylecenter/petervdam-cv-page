@@ -1,4 +1,4 @@
-<?php namespace PeterVanDam\Workexperience;
+<?php namespace petervandam\workexperience;
 
 use System\Classes\PluginBase;
 

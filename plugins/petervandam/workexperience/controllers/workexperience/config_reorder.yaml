@@ -1,4 +1,4 @@
-title: WorkExperience
-modelClass: PeterVanDam\Workexperience\Models\Experience
+title: Workexperience
+modelClass: petervandam\workexperience\Models\Experience
 toolbar:
     buttons: reorder_toolbar

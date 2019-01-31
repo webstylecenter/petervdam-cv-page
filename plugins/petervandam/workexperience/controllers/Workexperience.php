@@ -1,9 +1,9 @@
-<?php namespace PeterVanDam\Workexperience\Controllers;
+<?php namespace petervandam\workexperience\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;
 
-class WorkExperience extends Controller
+class Workexperience extends Controller
 {
     public $implement = [        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController',        'Backend\Behaviors\ReorderController'    ];
     
@@ -14,6 +14,5 @@ class WorkExperience extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('PeterVanDam.Workexperience', 'main-menu-item');
     }
 }

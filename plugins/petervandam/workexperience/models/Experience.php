@@ -1,4 +1,4 @@
-<?php namespace PeterVanDam\Workexperience\Models;
+<?php namespace petervandam\workexperience\Models;
 
 use Model;
 
