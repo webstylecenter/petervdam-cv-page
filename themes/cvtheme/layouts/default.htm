@@ -1,0 +1,27 @@
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Peter van Dam Curriculum Vitae</title>
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+    <body>
+    
+        {% page %}
+     
+        <!-- Scripts -->
+        <script src="{{ 'assets/javascript/vendor/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/vendor/bootstrap.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/vendor/wow.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>

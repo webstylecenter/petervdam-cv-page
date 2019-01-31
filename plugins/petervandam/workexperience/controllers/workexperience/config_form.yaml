@@ -1,0 +1,10 @@
+name: WorkExperience
+form: $/petervandam/workexperience/models/experience/fields.yaml
+modelClass: PeterVanDam\Workexperience\Models\Experience
+defaultRedirect: petervandam/workexperience/workexperience
+create:
+    redirect: 'petervandam/workexperience/workexperience/update/:id'
+    redirectClose: petervandam/workexperience/workexperience
+update:
+    redirect: petervandam/workexperience/workexperience
+    redirectClose: petervandam/workexperience/workexperience

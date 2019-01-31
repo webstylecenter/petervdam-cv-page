@@ -1,0 +1,30 @@
+description = "List of my work experience"
+
+[builderList]
+modelClass = "PeterVanDam\Workexperience\Models\Experience"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "company"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+sortColumn = "startyear"
+sortDirection = "desc"
+==
+{% for record in records %}
+        <div class="row">
+            <div class="col-md-4 ">
+                <h3>{{ record.company }}</h3>
+                <ul>
+                    <li>{{ record.location }}</li>
+                    <li>{{ record.startyear }} - {{ record.endyear }}</li>
+                    <li><a href="{{ record.url }}" rel="nofollow" target="_blank">{{ record.url|replace({'http://':'', 'https://':''}) }}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8 ">
+                <h4>{{ record.subtitle }}</h4>
+                {{ record.experience|raw }}
+            </div>
+        </div>
+    {% endfor %}

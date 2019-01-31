@@ -1,0 +1,10 @@
+columns:
+    company:
+        label: Company
+        type: text
+        searchable: true
+        sortable: true
+    startyear:
+        label: StartYear
+        type: text
+        sortable: true

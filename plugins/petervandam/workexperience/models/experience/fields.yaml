@@ -1,0 +1,36 @@
+fields:
+    company:
+        label: Company
+        span: auto
+        required: 1
+        type: text
+    subtitle:
+        label: 'Job name'
+        span: right
+        type: text
+    location:
+        label: Location
+        span: left
+        required: 1
+        type: text
+    url:
+        label: 'Link to website'
+        span: right
+        placeholder: 'https://'
+        required: 1
+        type: text
+    startyear:
+        label: 'Year started'
+        span: left
+        required: 1
+        type: text
+    endyear:
+        label: 'Year ended'
+        span: right
+        required: 1
+        type: text
+    experience:
+        label: 'Experience / Tasks'
+        span: full
+        size: huge
+        type: richeditor

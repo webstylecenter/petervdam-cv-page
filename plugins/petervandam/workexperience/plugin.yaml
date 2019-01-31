@@ -1,0 +1,11 @@
+plugin:
+    name: 'petervandam.workexperience::lang.plugin.name'
+    description: 'petervandam.workexperience::lang.plugin.description'
+    author: 'Peter van Dam'
+    icon: oc-icon-list-ul
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'petervandam.workexperience::lang.plugin.name'
+        url: petervandam/workexperience/workexperience
+        icon: icon-list-ul

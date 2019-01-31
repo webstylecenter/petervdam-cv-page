@@ -1,0 +1,4 @@
+title: WorkExperience
+modelClass: PeterVanDam\Workexperience\Models\Experience
+toolbar:
+    buttons: reorder_toolbar
