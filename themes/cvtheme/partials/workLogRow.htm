@@ -1,0 +1,24 @@
+==
+{% if rowCount == 1 %}
+    {% set disabled = '' %}
+{% else %}
+    {% set disabled = '' %}
+{% endif %}
+
+<tr id="row{{ rowCount }}">
+    <td>
+        <input type="text" id="project{{ rowCount }}" name="project{{ rowCount }}" onchange="enableNextRow({{ rowCount }});" value="" {{ disabled }} />
+    </td>
+    <td>
+        <input type="text" id="task{{ rowCount }}" name="task{{ rowCount }}" value="" {{ disabled }} />
+    </td>
+    <td>
+       {% partial 'workLogTimeSelector' timeType="start" rowCount=rowCount disabled=disabled %}
+    </td>
+    <td>
+        {% partial 'workLogTimeSelector' timeType="eind" rowCount=rowCount disabled=disabled %}
+    </td>
+    <td>
+        <input name="time{{ rowCount }}" id="time{{ rowCount }}" class="time" type="text" value="{% if rowCount == 1 %}00:15{% endif %}" {{ disabled }} />
+    </td>
+</tr>

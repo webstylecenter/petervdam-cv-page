@@ -1,0 +1,55 @@
+title = "Worklog"
+url = "/worklog/"
+layout = "singlepage"
+description = "Work log"
+is_hidden = 0
+==
+<div id="header">
+    <h1>Worklog</h1>
+</div>
+<form id="booker">
+    <p class="disclaimer">Data wordt alleen opgeslagen in de browser LocalStorage en wordt niet gedeeld met de server of anderen.</p>
+    <table>
+        <tr>
+            <th>Project</th>
+            <th>Opdracht</th>
+            <th>Starttijd</th>
+            <th>Eindtijd</th>
+            <th>Tijdsduur</th>
+        </tr>
+        
+        {% set maxRows = 20 %}
+        {% for rowCount in range(1, maxRows) %}
+            {% partial 'workLogRow' rowCount=rowCount %}
+        {% endfor %}
+        
+        <!-- <tr>
+            <td colspan="7">
+                <button>+ Rij toevoegen</button>
+            </td>
+        </tr> -->
+    </table>
+</form>
+<div id="progressbar">
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td>09:00</td>
+            
+            {% set hours = ['09', 10, 11, 12, 13, 14, 15] %}
+            {% set minutes = ['00', 15, 30, 45] %}
+            
+             {% for hour in hours %}
+                {% for minute in minutes %}    
+                    <td class="timeBox{{ hour }}{{ minute }} free">&nbsp;</td>
+                {% endfor %}
+            {% endfor %}
+            
+            <td>15:45</td>
+        </tr>
+    </table>
+</div>
+
+<div class="buttons">
+    <button class="save">Opslaan</button>
+    <button class="clear">Legen</button>
+</div>
