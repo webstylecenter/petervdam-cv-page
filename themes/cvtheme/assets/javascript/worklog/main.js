@@ -4,8 +4,11 @@
 $(function() {
 
     $('.save').on('click', function() {
-       var data = $('#booker').serialize();
-       localStorage.setItem('bookerForm', data);
+        saveData();
+    });
+    
+    $('input, select').blur(function() {
+        saveData();   
     });
     
     $('.clear').on('click', function() {
@@ -21,6 +24,14 @@ $(function() {
            var vals = elem.split('=');
            $("[name='" + vals[0] + "']").val(vals[1]);
         });
+    }
+    
+    
+    function saveData()
+    {
+        console.log("Save data");
+        var data = $('#booker').serialize();
+        localStorage.setItem('bookerForm', data);
     }
       
 });
