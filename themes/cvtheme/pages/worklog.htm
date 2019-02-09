@@ -18,16 +18,17 @@ is_hidden = 0
             <th>Tijdsduur</th>
         </tr>
         
-        {% set maxRows = 20 %}
+        {% set maxRows = 7 %}
         {% for rowCount in range(1, maxRows) %}
             {% partial 'workLogRow' rowCount=rowCount %}
         {% endfor %}
-        
-        <!-- <tr>
-            <td colspan="7">
-                <button>+ Rij toevoegen</button>
-            </td>
-        </tr> -->
+        <tr>
+            <td colspan="5"><hr /></td>
+        </tr>
+        {% set maxRows = 14 %}
+        {% for rowCount in range(8, maxRows) %}
+            {% partial 'workLogRow' rowCount=rowCount %}
+        {% endfor %}
     </table>
 </form>
 <div id="progressbar">
@@ -52,4 +53,5 @@ is_hidden = 0
 <div class="buttons">
     <button class="save">Opslaan</button>
     <button class="clear">Legen</button>
+    <p>Voor het laatst bijgewerkt op: <span class="updateDate"></
 </div>

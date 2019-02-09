@@ -46,9 +46,13 @@ function calculateTime(starttime, endtime) {
 
     if (isNaN(hours)) { hours = 0; }
     if (isNaN(minutes)) { minutes = 0; }
-    if (minutes < 10) { minutes = '0'+minutes; }
+    
+    var perc = 0;
+    if (minutes >= 15) { perc = 25; } 
+    if (minutes >= 30) { perc = 50; } 
+    if (minutes >= 45) { perc = 75; } 
 
-    return hours + ":" + minutes;
+    return hours + "," + perc;
 
 }
 

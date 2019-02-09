@@ -13,6 +13,7 @@ $(function() {
     
     $('.clear').on('click', function() {
         localStorage.removeItem('bookerForm');
+        localStorage.removeItem('bookerDate');
         window.location.reload(false); 
     });
     
@@ -24,14 +25,20 @@ $(function() {
            var vals = elem.split('=');
            $("[name='" + vals[0] + "']").val(vals[1]);
         });
+        
+        $('.updateDate').html(localStorage.getItem('bookerDate'));
     }
     
     
     function saveData()
     {
-        console.log("Save data");
         var data = $('#booker').serialize();
+        var d = new Date();
+        
         localStorage.setItem('bookerForm', data);
+        localStorage.setItem('bookerDate', d.toLocaleTimeString());
+        
+        $('.updateDate').html(d.toLocaleTimeString());
     }
       
 });

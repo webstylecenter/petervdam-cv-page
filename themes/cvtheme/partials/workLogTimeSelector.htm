@@ -1,5 +1,11 @@
 ==
-{% set hours = ['09', 10, 11, 12, 13, 14, 15, 16, 17, 18] %}
+{% if rowCount <= 7 %}
+    {% set hours = ['09', 10, 11, 12] %}
+{% else %}
+    {% set hours = [13, 14, 15, 16, 17, 18] %}
+{% endif %}
+
+
 {% set minutes = ['00', 15, 30, 45] %}
 
 <select id="{{ timeType }}tijd{{ rowCount }}" name="{{ timeType }}tijd{{ rowCount }}" onchange="updateTime(this, {{ rowCount }})" {{ disabled }}>
