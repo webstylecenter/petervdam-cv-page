@@ -1,0 +1,10 @@
+name: Categories
+form: $/petervandam/movies/models/categories/fields.yaml
+modelClass: petervandam\Movies\Models\Categories
+defaultRedirect: petervandam/movies/categories
+create:
+    redirect: 'petervandam/movies/categories/update/:id'
+    redirectClose: petervandam/movies/categories
+update:
+    redirect: petervandam/movies/categories
+    redirectClose: petervandam/movies/categories

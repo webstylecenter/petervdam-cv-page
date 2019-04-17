@@ -1,0 +1,10 @@
+name: Movies
+form: $/petervandam/movies/models/movies/fields.yaml
+modelClass: petervandam\Movies\Models\Movies
+defaultRedirect: petervandam/movies/movies
+create:
+    redirect: 'petervandam/movies/movies/update/:id'
+    redirectClose: petervandam/movies/movies
+update:
+    redirect: petervandam/movies/movies
+    redirectClose: petervandam/movies/movies

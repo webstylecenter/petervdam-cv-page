@@ -1,0 +1,10 @@
+columns:
+    name:
+        label: 'petervandam.movies::lang.plugin.name'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'petervandam.movies::lang.plugin.description'
+        type: text
+        searchable: true

@@ -1,0 +1,12 @@
+list: $/petervandam/movies/models/movies/columns.yaml
+modelClass: petervandam\Movies\Models\Movies
+title: Movies
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'petervandam/movies/movies/update/:id'

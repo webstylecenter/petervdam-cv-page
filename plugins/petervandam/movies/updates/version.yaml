@@ -1,0 +1,20 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table petervandam_movies_categories'
+    - builder_table_create_petervandam_movies_categories.php
+1.0.3:
+    - 'Created table petervandam_movies_'
+    - builder_table_create_petervandam_movies_.php
+1.0.4:
+    - 'Updated table petervandam_movies_movies_categories'
+    - builder_table_update_petervandam_movies_movies_categories.php
+1.0.5:
+    - 'Updated table petervandam_movies_movies_categories'
+    - builder_table_update_petervandam_movies_movies_categories_2.php
+1.0.6:
+    - 'Updated table petervandam_movies_'
+    - builder_table_update_petervandam_movies_.php
+1.0.7:
+    - 'Updated table petervandam_movies_'
+    - builder_table_update_petervandam_movies__2.php
