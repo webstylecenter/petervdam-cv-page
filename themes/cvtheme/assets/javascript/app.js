@@ -13,13 +13,7 @@ function open() {
   }
 
   $('#rightbar').load('/cv/?v=' + Math.random(), function() {
-      
       $('.skewed, .skewed *').css('transform', 'skewX(0deg)');
-      
-    //   $(".skewed, .skewed *").transition(
-    //     {
-    //       skewX: '0deg',
-    //     },1000);
       opened = true;
   }).addClass('addedShadow');
 }

@@ -1,0 +1,12 @@
+title = "Image improver"
+url = "/optimized/:folder/:subfolder/:file"
+description = "Improves images"
+is_hidden = 0
+
+[ImageResizer]
+modern = 1
+folder = "{{ :folder }}"
+subfolder = "{{ :subfolder }}"
+file = "{{ :file }}"
+==
+{% component 'ImageResizer' %}
