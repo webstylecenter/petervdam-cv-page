@@ -1,0 +1,10 @@
+name: Pagebuilder
+form: $/petervandam/pagebuilder/models/pagebuilder/fields.yaml
+modelClass: petervandam\pagebuilder\Models\Pagebuilder
+defaultRedirect: petervandam/pagebuilder/pagebuilder
+create:
+    redirect: 'petervandam/pagebuilder/pagebuilder/update/:id'
+    redirectClose: petervandam/pagebuilder/pagebuilder
+update:
+    redirect: petervandam/pagebuilder/pagebuilder
+    redirectClose: petervandam/pagebuilder/pagebuilder

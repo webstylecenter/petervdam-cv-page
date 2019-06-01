@@ -1,0 +1,73 @@
+tabs:
+    fields:
+        title:
+            label: 'Page Title'
+            span: auto
+            type: text
+            tab: 'Page Info'
+        meta_keywords:
+            label: 'Meta Keywords'
+            span: left
+            type: text
+            tab: 'Page Info'
+        meta_description:
+            label: 'Meta Description'
+            span: auto
+            type: text
+            tab: 'Page Info'
+        segments:
+            label: Segments
+            prompt: 'Add new item'
+            span: left
+            type: repeater
+            tab: 'Page Info'
+            form:
+                fields:
+                    segments:
+                        label: Segments
+                        options:
+                            folder1: folder1
+                            folder2: folder2
+                            folder3: folder3
+                        showSearch: true
+                        span: auto
+                        type: dropdown
+        slug:
+            label: Slug
+            span: right
+            type: text
+            tab: 'Page Info'
+        contents:
+            label: Blocks
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            tab: 'Page Contents'
+            form:
+                fields:
+                    anchor:
+                        label: 'Anchor / Block ID'
+                        span: left
+                        required: 1
+                        type: text
+                    template:
+                        label: 'Template / Type'
+                        options:
+                            header: header
+                            'intro text': intro_txt
+                        showSearch: true
+                        span: auto
+                        placeholder: 'Select what type of content to add'
+                        required: 1
+                        type: dropdown
+                    content:
+                        label: Content
+                        size: ''
+                        span: full
+                        required: 1
+                        type: richeditor
+                    media:
+                        label: 'Background image'
+                        mode: file
+                        span: auto
+                        type: mediafinder

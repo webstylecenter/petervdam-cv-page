@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table petervandam_pagebuilder_'
+    - builder_table_create_petervandam_pagebuilder_.php
+1.0.3:
+    - 'Updated table petervandam_pagebuilder_'
+    - builder_table_update_petervandam_pagebuilder_.php
+1.0.4:
+    - 'Updated table petervandam_pagebuilder_'
+    - builder_table_update_petervandam_pagebuilder__2.php

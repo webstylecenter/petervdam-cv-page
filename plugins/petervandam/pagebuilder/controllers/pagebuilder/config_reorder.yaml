@@ -1,0 +1,4 @@
+title: Pagebuilder
+modelClass: petervandam\pagebuilder\Models\Pagebuilder
+toolbar:
+    buttons: reorder_toolbar

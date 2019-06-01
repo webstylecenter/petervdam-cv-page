@@ -1,0 +1,15 @@
+plugin:
+    name: 'petervandam.pagebuilder::lang.plugin.name'
+    description: 'petervandam.pagebuilder::lang.plugin.description'
+    author: 'Peter van Dam'
+    icon: oc-icon-file-image-o
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Page Builder'
+        url: petervandam/pagebuilder/pagebuilder
+        icon: icon-file-image-o
+    main-menu-item2:
+        label: 'Menu Item'
+        icon: icon-life-ring
+        url: /
